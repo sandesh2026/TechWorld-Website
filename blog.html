@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tech With Sandesh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Tech With Sandesh</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="masterclass.html">Masterclass</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="masterclass.html" class="btn btn-primary-sm">Enroll Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="section-label">Blog & Articles</span>
+                <h1 class="hero-title">DevOps & AWS Insights</h1>
+                <p class="hero-subtitle">Practical tutorials, architecture guides, and real-world DevOps experiences to help you level up your skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section style="background-color: var(--bg-white);">
+        <div class="container">
+            <span class="section-label">Featured Article</span>
+            <div class="content-card featured" style="margin-top: 24px;">
+                <div class="content-badge">Latest Post</div>
+                <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; align-items: center;">
+                    <div>
+                        <div class="blog-meta" style="color: rgba(255, 255, 255, 0.8); margin-bottom: 16px;">
+                            <span>January 15, 2024</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 16px; color: white;">Building a Production-Ready AWS VPC from Scratch</h2>
+                        <p class="content-description" style="margin-bottom: 24px;">Learn how to design and implement a secure, scalable VPC architecture for production workloads. We'll cover public/private subnets, NAT gateways, security groups, and best practices.</p>
+                        <a href="#" class="btn btn-white">Read Article →</a>
+                    </div>
+                    <div>
+                        <div style="background: rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" rx="8" fill="rgba(255, 255, 255, 0.1)"/>
+                                <path d="M40 60H160V80H40V60Z" fill="white" opacity="0.3"/>
+                                <path d="M40 100H120V120H40V100Z" fill="white" opacity="0.5"/>
+                                <path d="M40 140H140V160H40V140Z" fill="white" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Articles -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">All Articles</span>
+                <h2 class="section-title">Recent Posts</h2>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <circle cx="175" cy="100" r="40" fill="#2563EB" opacity="0.2"/>
+                            <path d="M155 100L175 120L195 100L175 80L155 100Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>DevOps</span>
+                            <span>•</span>
+                            <span>January 10, 2024</span>
+                        </div>
+                        <h3 class="blog-title">Understanding Docker Networking: Bridge, Host, and Overlay</h3>
+                        <p class="blog-excerpt">Deep dive into Docker networking modes and when to use each one for your containerized applications.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <rect x="100" y="50" width="150" height="100" rx="8" fill="#2563EB" opacity="0.3"/>
+                            <rect x="120" y="70" width="110" height="60" rx="4" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>AWS</span>
+                            <span>•</span>
+                            <span>January 5, 2024</span>
+                        </div>
+                        <h3 class="blog-title">AWS Security Groups vs NACLs: Complete Comparison</h3>
+                        <p class="blog-excerpt">Understand the differences between Security Groups and Network ACLs and learn when to use each.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <path d="M100 100L175 50L250 100L175 150L100 100Z" fill="#2563EB" opacity="0.3"/>
+                            <circle cx="175" cy="100" r="30" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>CI/CD</span>
+                            <span>•</span>
+                            <span>December 28, 2023</span>
+                        </div>
+                        <h3 class="blog-title">Building a Complete CI/CD Pipeline with GitHub Actions</h3>
+                        <p class="blog-excerpt">Step-by-step guide to automating your deployment process using GitHub Actions and AWS.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <rect x="80" y="60" width="60" height="80" rx="4" fill="#2563EB" opacity="0.3"/>
+                            <rect x="150" y="60" width="60" height="80" rx="4" fill="#2563EB" opacity="0.5"/>
+                            <rect x="220" y="60" width="60" height="80" rx="4" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Kubernetes</span>
+                            <span>•</span>
+                            <span>December 20, 2023</span>
+                        </div>
+                        <h3 class="blog-title">Kubernetes Pods Explained: From Basics to Advanced</h3>
+                        <p class="blog-excerpt">Everything you need to know about Kubernetes Pods, the fundamental building block of K8s applications.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <path d="M100 150L175 50L250 150H100Z" fill="#2563EB" opacity="0.3"/>
+                            <path d="M130 130L175 70L220 130H130Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Architecture</span>
+                            <span>•</span>
+                            <span>December 15, 2023</span>
+                        </div>
+                        <h3 class="blog-title">Designing Highly Available Applications on AWS</h3>
+                        <p class="blog-excerpt">Best practices for building resilient, fault-tolerant applications using AWS services.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <circle cx="120" cy="100" r="30" fill="#2563EB" opacity="0.3"/>
+                            <circle cx="175" cy="100" r="30" fill="#2563EB" opacity="0.5"/>
+                            <circle cx="230" cy="100" r="30" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>DevOps</span>
+                            <span>•</span>
+                            <span>December 10, 2023</span>
+                        </div>
+                        <h3 class="blog-title">Infrastructure as Code: Terraform vs CloudFormation</h3>
+                        <p class="blog-excerpt">Compare Terraform and AWS CloudFormation to choose the right IaC tool for your needs.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 7 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <rect x="80" y="60" width="190" height="80" rx="8" fill="#2563EB" opacity="0.3"/>
+                            <path d="M100 100L150 80L200 100L150 120L100 100Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>AWS</span>
+                            <span>•</span>
+                            <span>December 5, 2023</span>
+                        </div>
+                        <h3 class="blog-title">AWS Lambda Best Practices for Production</h3>
+                        <p class="blog-excerpt">Optimize your serverless functions for performance, cost, and reliability in production environments.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 8 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <path d="M120 150V60H150V150H120Z" fill="#2563EB" opacity="0.3"/>
+                            <path d="M160 150V80H190V150H160Z" fill="#2563EB" opacity="0.5"/>
+                            <path d="M200 150V100H230V150H200Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Monitoring</span>
+                            <span>•</span>
+                            <span>November 28, 2023</span>
+                        </div>
+                        <h3 class="blog-title">Setting Up Prometheus and Grafana on Kubernetes</h3>
+                        <p class="blog-excerpt">Complete guide to implementing monitoring and observability for your Kubernetes clusters.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 9 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="350" height="200" fill="#EFF6FF"/>
+                            <circle cx="175" cy="100" r="60" fill="#2563EB" opacity="0.2"/>
+                            <circle cx="175" cy="100" r="40" fill="#2563EB" opacity="0.4"/>
+                            <circle cx="175" cy="100" r="20" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Security</span>
+                            <span>•</span>
+                            <span>November 20, 2023</span>
+                        </div>
+                        <h3 class="blog-title">AWS IAM Roles and Policies: A Practical Guide</h3>
+                        <p class="blog-excerpt">Master AWS identity and access management with real-world examples and security best practices.</p>
+                        <a href="#" class="btn btn-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section style="background-color: var(--bg-white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Browse by Topic</span>
+                <h2 class="section-title">Article Categories</h2>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#EFF6FF"/>
+                            <path d="M20 12L12 16V21C12 25.42 15.13 29.56 20 30.5C24.87 29.56 28 25.42 28 21V16L20 12Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">DevOps Fundamentals</h3>
+                    <p class="card-description">Core DevOps concepts, culture, and practices.</p>
+                    <a href="#" class="btn btn-link" style="margin-top: 12px;">View Articles →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#EFF6FF"/>
+                            <path d="M28 14H24V12C24 10.9 23.1 10 22 10H18C16.9 10 16 10.9 16 12V14H12C10.9 14 10 14.9 10 16V28C10 29.1 10.9 30 12 30H28C29.1 30 30 29.1 30 28V16C30 14.9 29.1 14 28 14ZM18 12H22V14H18V12ZM20 26C17.79 26 16 24.21 16 22C16 19.79 17.79 18 20 18C22.21 18 24 19.79 24 22C24 24.21 22.21 26 20 26Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">AWS Cloud</h3>
+                    <p class="card-description">AWS services, architecture, and solutions.</p>
+                    <a href="#" class="btn btn-link" style="margin-top: 12px;">View Articles →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#EFF6FF"/>
+                            <path d="M26 14L20 12L14 14L12 20L14 26L20 28L26 26L28 20L26 14ZM20 24C17.79 24 16 22.21 16 20C16 17.79 17.79 16 20 16C22.21 16 24 17.79 24 20C24 22.21 22.21 24 20 24Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">CI/CD Pipelines</h3>
+                    <p class="card-description">Automation and deployment strategies.</p>
+                    <a href="#" class="btn btn-link" style="margin-top: 12px;">View Articles →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#EFF6FF"/>
+                            <path d="M12 12H28V16H12V12ZM12 18H28V22H12V18ZM12 24H28V28H12V24Z" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Architecture & Design</h3>
+                    <p class="card-description">System design and architecture patterns.</p>
+                    <a href="#" class="btn btn-link" style="margin-top: 12px;">View Articles →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="section-title">Never Miss a Post</h2>
+                    <p class="section-description">Subscribe to get new articles delivered to your inbox. Plus, receive exclusive DevOps tips and AWS insights.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="input-field" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Tech With Sandesh</h3>
+                    <p class="footer-description">Making DevOps and AWS simple for everyone.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Learn</h4>
+                    <ul class="footer-links">
+                        <li><a href="masterclass.html">Masterclass</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tech With Sandesh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
